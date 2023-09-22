@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <div id="jumbo" class="container">
+    <div id="jumbo" class="container"> <!--da fixare-->
      
     </div>
 </template>
