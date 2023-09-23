@@ -8,9 +8,9 @@ export default {
     <footer>
 
         <div class="main_footer">
-            <div class="container py-5">
+            <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-6 py-5">
                         <div class="d-flex gap-5">
 
                             <div>
@@ -124,37 +124,90 @@ export default {
 
                         </div>
                     </div>
-                    <div class="col-6">
-                        <img src="../assets/img/dc-logo-bg.png" alt="">
+                    <div class="col-6 logo_dc">
+
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="footer_bottom">
-            <div class="container"></div>
+            <div class="container d-flex justify-content-between h-100">
+
+                <div class="bottom_left d-flex align-items-center">
+                    <a href="##">
+                        <button class="btn btn-outline-primary text-white rounded-0 fs-5">
+                            SIGN-UP NOW!
+                        </button>
+                    </a>
+                </div>
+
+                <div class="bottom_right d-flex align-items-center gap-4">
+                    <h3>FOLLOW US</h3>
+                    <a href="##">
+                        <img src="../assets/img/footer-facebook.png" alt="">
+                    </a>
+                    <a href="##">
+                        <img src="../assets/img/footer-twitter.png" alt="">
+                    </a>
+                    <a href="##">
+                        <img src="../assets/img/footer-youtube.png" alt="">
+                    </a>
+                    <a href="##">
+                        <img src="../assets/img/footer-pinterest.png" alt="">
+                    </a>
+                    <a href="##">
+                        <img src="../assets/img/footer-periscope.png" alt="">
+                    </a>
+                </div>
+
+
+            </div>
+
 
         </div>
+
+        
 
     </footer>
 </template>
 
 <style lang="scss" scoped>
 @use '../assets/scss/partials/viariables' as *;
+
 .main_footer {
-    min-height: 300px; //da fixare
+    height: 400px;
     background-image: url('../assets/img/footer-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+
     h3 {
         text-transform: uppercase;
         color: white;
         font-weight: bolder;
         font-size: 1.25rem;
     }
+
     a {
         color: gray;
         text-decoration: none;
     }
+
+    .logo_dc {
+        background-image: url('../assets/img/dc-logo-bg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
-</style>
+
+.footer_bottom {
+    height: 110px;
+    background-color: $dc_dark;
+
+    h3 {
+        color: $dc_primary;
+        font-weight: bold;
+        font-size: 1.25rem;
+        padding-top: 0.5rem;
+    }
+}</style>
