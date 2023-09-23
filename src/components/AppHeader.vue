@@ -62,6 +62,7 @@ header {
         height: 100%;
         li {
             a {
+                
                 text-transform: uppercase;
                 &.active {
                     color: $dc_primary;

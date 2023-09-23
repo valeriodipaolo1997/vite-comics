@@ -40,6 +40,7 @@ export default {
     .wrapper {
         height: 55px;
         a {
+            
             text-decoration: none;
             img {
                 height: 55px;
