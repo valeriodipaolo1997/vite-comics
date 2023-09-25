@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-    <div class="col pt-4">
+    <div class="col pt-2">
         <div class="card">
             <img class="card-img-top" :src="thumb" alt="">
             <div class="card-body ps-0">
